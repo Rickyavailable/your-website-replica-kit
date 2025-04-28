@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Stop, Reset } from "lucide-react";
+import { SquareSlash, RotateCcw } from "lucide-react";
 
 interface ResultsPageProps {
   facesDetected: number;
@@ -103,7 +103,7 @@ const ResultsPage: React.FC<ResultsPageProps> = ({ facesDetected, onReset }) => 
           variant="outline"
           className="px-8 py-6 text-lg border-2"
         >
-          <Stop className="mr-2" size={20} />
+          <SquareSlash className="mr-2" size={20} />
           {isActive ? "STOP" : "START"}
         </Button>
         
@@ -112,7 +112,7 @@ const ResultsPage: React.FC<ResultsPageProps> = ({ facesDetected, onReset }) => 
           variant="outline"
           className="px-8 py-6 text-lg border-2"
         >
-          <Reset className="mr-2" size={20} />
+          <RotateCcw className="mr-2" size={20} />
           RESET
         </Button>
       </div>
